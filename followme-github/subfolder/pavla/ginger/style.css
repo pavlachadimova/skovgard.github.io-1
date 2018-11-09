@@ -1,0 +1,335 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font-family: 'Open Sans',
+        sans-serif;
+    background-color: #FAF9FA;
+}
+
+/* .wrapper {
+    min-width: 1000px;
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+header,
+main,
+footer {
+    padding: 1%;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+    height: auto;
+    background-color: #8175ED;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(#8175ED, #764049);
+    /* Standard syntax (must be last) */
+    opacity: 0.5;
+}
+
+#nav-desktop {
+    display: none;
+}
+
+#nav-icon {
+    text-align: right;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #8175ED;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(#8175ED, #764049);
+    /* Standard syntax (must be last) */
+    opacity: 0.5;
+}
+
+#nav-mobile {
+    text-align: center;
+    background-color: #8175ED;
+    font-size: 1.4em;
+    color: #F7F48D;
+}
+
+#nav-mobile li {
+    padding: 0.8em;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    list-style-type: none;
+    color: #F7F48D;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+
+}
+
+
+nav a:hover {
+
+
+    color: #F7F48D;
+    font-size: 1em;
+    opacity: 1;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+/* Article
+-----------------------------------------------------------------------------*/
+h1 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10vw;
+    margin: 1vw;
+    padding: 3vw;
+    margin-top: 1vw;
+    color: #445E39;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.001vw;
+
+}
+
+h2 {
+    text-align: center;
+    color: #8175ED;
+    font-size: 1.5vw;
+    display: none;
+    margin-top: 0px;
+    margin-left: 7em;
+    margin-right: 7em;
+    line-height: 1.4em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Akrobat Thin', sans-serif;
+    word-spacing: 4vw;
+    justify-content: center;
+    font-size: 1.3vw;
+    padding-top: 1vw;
+    margin-bottom: 2vw;
+    color: #8175ED;
+}
+
+h4 {
+
+    display: inline-block;
+    padding: 1vw;
+    line-height: 4.5vw;
+
+    -moz-border-radius: 50vw;
+    border-radius: 50vw;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #445E39;
+    color: #8175ED;
+    text-align: center;
+    font-size: 1vw;
+}
+
+h6 {
+    font-family: 'Akrobat Thin', sans-serif;
+    font-size: 1vw;
+    letter-spacing: 0.3em;
+    color: #8175ED;
+    text-align: center;
+    margin: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+
+#text {
+    text-align: center;
+}
+
+
+h4:hover + h2 {
+    display: block;
+}
+
+h4:hover {
+    opacity: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5em;
+    padding-top: 2em;
+
+}
+
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    margin: 1px;
+    padding: 10px;
+}
+
+
+
+
+.column img {
+    max-width: 100%;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.footer {
+    max-height: 100%;
+    height: auto;
+    padding: 1px;
+    background-color: #8175ED;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(#8175ED, #764049);
+    /* Standard syntax (must be last) */
+    opacity: 0.7;
+
+}
+
+
+
+/* Responsive layout - makes a ONE column-layout instead of four columns */
+@media only screen and (max-width: 530px) {
+
+
+    .row {
+        flex-direction: column;
+        padding: 0.5em;
+        display: flex;
+    }
+
+
+    .column {}
+
+    .column img {
+        max-width: 80%;
+        padding: 0.1em;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    header {}
+
+    #nav-desktop {
+        display: block;
+        text-align: right;
+    }
+
+    #nav-desktop li {
+        display: inline;
+        font-size: 1.3em;
+        margin: 0.3em;
+
+    }
+
+    #nav-desktop li a {
+        padding: 0.5em;
+        border-radius: 110px;
+        outline-color: aqua;
+
+    }
+
+    #nav-icon {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: none;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media only screen and (max-width: 520px) {
+        .row {
+            padding: 0.1em;
+        }
+
+        .column {}
+
+        .column img {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+
+        .row {
+            padding: 0.1em;
+        }
+
+        #nav-desktop {
+            text-align: right;
+        }
+
+
+
+        .column img {
+            flex: 30%;
+            max-width: 100%;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 960px) @media only screen and (min-width: 1000px) {
+        header {}
+
+        #wrapper {
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        @media only screen and (min-width: 1024px) {
+            header {
+                background-color: darkgoldenrod;
+            }
+
+            #nav-desktop {
+                text-align: right;
+            }
+
+            #nav-desktop li {
+                display: inline;
+                font-size: 1em;
+                margin: 0.5em;
+                font-size: 1.5vw;
+
+            }
+
+            #nav-desktop li a {
+                padding: 0em;
+                background-color: antiquewhite;
+                text-decoration: underline 1px;
+
+            }
+
+            #nav-desktop li a:hover {}
+
+
+            @media only screen and (max-width: 3000px) {}
